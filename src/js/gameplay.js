@@ -1,6 +1,8 @@
+import molot from '../img/hammer.jpg';
+
 const hit = document.getElementsByClassName('hit')[0];
 const miss = document.getElementsByClassName('miss')[0];
-
+const molot1 = `url(${molot})`;
 window.addEventListener('mousedown', (e) => {
   if (e.target.matches('.img')) {
     if (+hit.textContent === 5) {
@@ -9,7 +11,7 @@ window.addEventListener('mousedown', (e) => {
       hit.textContent = 0;
       return true;
     }
-    e.target.style.cursor = 'url("../src/img/hammer.jpg"), pointer';
+    e.target.style.cursor = `${molot1}, pointer`;
     hit.textContent = +hit.textContent + 1;
   } else {
     if (+miss.textContent === 5) {
