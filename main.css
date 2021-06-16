@@ -1,0 +1,8 @@
+body {
+    background: rgb(152, 247, 128);
+  }
+  
+.game-board {
+    margin-left: auto;
+    margin-right: auto;
+  }
